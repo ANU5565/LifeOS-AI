@@ -1,0 +1,1 @@
+# LifeOS AI — Schemas package
