@@ -1,12 +1,13 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import { goals, tasks, type Goal, type Task } from "@/lib/api";
 import { useAuth } from "@/lib/auth";
 
 function SectionSkeleton() {
   return (
-    <div className="rounded-lg border border-zinc-800 bg-zinc-900/60 p-4 animate-pulse">
+    <div className="ui-card animate-pulse">
       <div className="h-4 w-32 rounded bg-zinc-700 mb-3" />
       <div className="space-y-2">
         <div className="h-3 w-full rounded bg-zinc-800" />
@@ -18,7 +19,7 @@ function SectionSkeleton() {
 
 function EmptyStateCard({ title, description }: { title: string; description: string }) {
   return (
-    <div className="rounded-lg border border-zinc-800 bg-zinc-900/60 p-4">
+    <div className="ui-card">
       <h2 className="text-sm font-semibold text-zinc-200">{title}</h2>
       <p className="mt-1 text-sm text-zinc-400">{description}</p>
     </div>
@@ -75,7 +76,7 @@ export default function Home() {
   if (!isAuthenticated) {
     return (
       <main className="min-h-screen bg-zinc-950 text-zinc-100 p-6">
-        <div className="rounded-lg border border-zinc-800 bg-zinc-900/60 p-4">
+        <div className="ui-card">
           <h1 className="text-base font-semibold">Welcome to LifeOS AI</h1>
           <p className="mt-1 text-sm text-zinc-400">Please sign in to load your dashboard.</p>
         </div>
@@ -88,6 +89,14 @@ export default function Home() {
       <header>
         <h1 className="text-xl font-semibold">Welcome back{user?.name ? `, ${user.name}` : ""}</h1>
         <p className="mt-1 text-sm text-zinc-400">Here&apos;s what&apos;s in your workspace.</p>
+        <div className="mt-3 flex items-center gap-2">
+          <Link href="/goals" className="ui-btn ui-btn-primary">
+            View goals
+          </Link>
+          <Link href="/tasks" className="ui-btn ui-btn-secondary">
+            View tasks
+          </Link>
+        </div>
       </header>
 
       {isDataLoading ? (
@@ -100,7 +109,7 @@ export default function Home() {
           {goalsList.length === 0 ? (
             <EmptyStateCard title="No goals yet" description="Create your first goal to start tracking progress." />
           ) : (
-            <div className="rounded-lg border border-zinc-800 bg-zinc-900/60 p-4">
+            <div className="ui-card">
               <h2 className="text-sm font-semibold text-zinc-200">Goals</h2>
               <ul className="mt-2 space-y-1 text-sm text-zinc-300">
                 {goalsList.slice(0, 3).map((goal) => (
@@ -113,7 +122,7 @@ export default function Home() {
           {tasksList.length === 0 ? (
             <EmptyStateCard title="No tasks yet" description="Add a task to break your goals into action steps." />
           ) : (
-            <div className="rounded-lg border border-zinc-800 bg-zinc-900/60 p-4">
+            <div className="ui-card">
               <h2 className="text-sm font-semibold text-zinc-200">Tasks</h2>
               <ul className="mt-2 space-y-1 text-sm text-zinc-300">
                 {tasksList.slice(0, 3).map((task) => (

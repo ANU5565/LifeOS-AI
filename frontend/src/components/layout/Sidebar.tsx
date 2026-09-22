@@ -116,7 +116,7 @@ export default function Sidebar() {
           </div>
           <button
             onClick={logout}
-            className="w-full mt-2 px-3 py-2 text-xs text-zinc-500 hover:text-zinc-300 hover:bg-zinc-800/50 rounded-lg transition-colors text-left"
+            className="ui-btn ui-btn-ghost w-full mt-2 text-left text-xs"
           >
             Sign out
           </button>
