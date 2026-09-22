@@ -30,6 +30,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       setIsLoading(false);
       return;
     }
+    setIsLoading(true);
     try {
       const userData = await authApi.me();
       setUser(userData);
@@ -42,7 +43,10 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   }, []);
 
   useEffect(() => {
-    fetchUser();
+    const loadUser = async () => {
+      await fetchUser();
+    };
+    void loadUser();
   }, [fetchUser]);
 
   const login = async (email: string, password: string) => {
