@@ -509,16 +509,23 @@ If you find a bug or have a feature request, please open an issue with:
 * Relevant logs or screenshots
 
 ---
-
-# 📸 Screenshots / Demo
-
-Screenshots and demo links can be added here as the application UI and hosted demo become available.
-
-Example:
-
-```text
-Coming soon.
-```
+* 🚀 About
+* ✨ Features
+* 🏗️ Architecture
+* 🛠️ Tech Stack
+* 📂 Project Structure
+* ⚙️ Installation
+* 🔐 Environment Variables
+* ▶️ Running Locally
+* 🧪 Testing
+* 🤝 Contributing
+* 🐛 Issues
+* 🔀 Pull Requests
+* 📜 License
+* 🛡️ Code of Conduct
+* 🔒 Security
+* 💬 Support
+* 🌟 Contributors
 
 ---
 
