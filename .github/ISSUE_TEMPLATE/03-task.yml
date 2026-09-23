@@ -1,0 +1,8 @@
+Task:
+Implement calendar conflict detection.
+
+Requirements:
+- Detect overlapping events
+- Calculate severity
+- Return structured result
+- Add tests
