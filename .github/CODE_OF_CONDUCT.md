@@ -22,7 +22,6 @@ The following behavior is not acceptable:
 * Trolling or intentionally disrupting discussions.
 * Publishing someone's private or personal information without permission.
 * Sexualized language or unwanted sexual attention.
-* Threats of violence or other forms of threatening behavior.
 * Deliberate attempts to disrupt the project, its infrastructure, or its contributors.
 * Any other conduct that would reasonably be considered inappropriate or harmful in a professional open-source community.
 
