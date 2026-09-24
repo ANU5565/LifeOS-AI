@@ -15,6 +15,17 @@ Examples of behavior that contribute to a positive environment include:
 
 
 
+The following behavior is not acceptable:
+
+* Harassment, discrimination, or intimidation.
+* Personal attacks, insults, or deliberately hostile behavior.
+* Trolling or intentionally disrupting discussions.
+* Publishing someone's private or personal information without permission.
+* Sexualized language or unwanted sexual attention.
+* Deliberate attempts to disrupt the project, its infrastructure, or its contributors.
+* Any other conduct that would reasonably be considered inappropriate or harmful in a professional open-source community.
+
+
 ## Scope
 
 This Code of Conduct applies to all project spaces, including:
