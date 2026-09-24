@@ -13,7 +13,7 @@ Examples of behavior that contribute to a positive environment include:
 * Respecting project maintainers, contributors, reviewers, and users.
 * Keeping discussions relevant to the project.
 
-## Unacceptable Behavior
+
 
 The following behavior is not acceptable:
 
@@ -24,6 +24,7 @@ The following behavior is not acceptable:
 * Sexualized language or unwanted sexual attention.
 * Deliberate attempts to disrupt the project, its infrastructure, or its contributors.
 * Any other conduct that would reasonably be considered inappropriate or harmful in a professional open-source community.
+
 
 ## Scope
 
@@ -38,20 +39,6 @@ This Code of Conduct applies to all project spaces, including:
 
 Project maintainers may take appropriate action when behavior occurring outside project spaces has a direct and significant impact on the safety or well-being of the LifeOS AI community.
 
-## Reporting Issues
-
-If you experience or witness unacceptable behavior, please report it privately to the project maintainers.
-
-For security-related issues, please follow the instructions in [`SECURITY.md`](SECURITY.md) rather than creating a public issue.
-
-When reporting a Code of Conduct concern, please provide as much relevant information as possible, including:
-
-* What happened.
-* When and where it happened.
-* The people involved.
-* Any relevant links, screenshots, or other evidence.
-
-Reports will be handled as respectfully and confidentially as reasonably possible.
 
 ## Enforcement
 

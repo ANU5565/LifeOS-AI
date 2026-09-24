@@ -70,7 +70,7 @@ The project Pull Request template currently asks contributors to provide:
 - A description of the change.
 - A related Issue when applicable.
 - The type of change.
-- A summary of the changes made.
+- A summary of the changes made.a
 - Testing information.
 - Screenshots when applicable.
 - A contributor checklist. 
