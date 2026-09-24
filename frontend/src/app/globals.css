@@ -1,6 +1,51 @@
 @import "tailwindcss";
 
+@layer base {
+  :root {
+    --lifeos-background: #09090b;
+    --lifeos-surface: #101014;
+    --lifeos-border: rgba(255, 255, 255, 0.08);
+    --lifeos-text: #fafafa;
+    --lifeos-muted: #a1a1aa;
+    --lifeos-violet: #8b5cf6;
+    --lifeos-fuchsia: #d946ef;
+    --lifeos-violet-glow: rgba(139, 92, 246, 0.16);
+    --lifeos-fuchsia-glow: rgba(217, 70, 239, 0.1);
+  }
+
+  html {
+    background: var(--lifeos-background);
+    color-scheme: dark;
+  }
+
+  body {
+    min-width: 320px;
+    min-height: 100vh;
+    min-height: 100dvh;
+    margin: 0;
+    background:
+      radial-gradient(circle at 15% 0%, var(--lifeos-violet-glow), transparent 32rem),
+      radial-gradient(circle at 90% 20%, var(--lifeos-fuchsia-glow), transparent 28rem),
+      var(--lifeos-background);
+    color: var(--lifeos-text);
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background: rgba(139, 92, 246, 0.35);
+    color: #ffffff;
+  }
+}
+
 @layer components {
+  .lifeos-app-shell {
+    min-height: 100dvh;
+    overflow-x: clip;
+    background: var(--lifeos-background);
+  }
+
   .ui-card {
     @apply rounded-lg border border-zinc-800 bg-zinc-900/60 p-4;
   }
