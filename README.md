@@ -420,6 +420,21 @@ http://localhost:3000
 
 Google OAuth variables are currently reserved for the Calendar integration work identified in the project configuration.
 
+
+## ☁️ Vercel Deployment Notes
+
+This repository includes `vercel.json` for deploying the Next.js frontend and Python backend together.
+
+Set these environment variables in Vercel Project Settings:
+
+- `DATABASE_URL`
+- `SECRET_KEY`
+- `GEMINI_API_KEY`
+- `CORS_ORIGINS`
+- `NEXT_PUBLIC_API_URL=/api/backend`
+
+`NEXT_PUBLIC_API_URL=/api/backend` routes frontend API requests through the Vercel backend rewrite instead of `localhost`.
+
 ---
 
 # 🧪 Development

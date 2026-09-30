@@ -1,7 +1,9 @@
 """LifeOS AI — Application configuration via environment variables."""
 
-from pydantic_settings import BaseSettings
 from functools import lru_cache
+from pathlib import Path
+
+from pydantic_settings import BaseSettings
 
 
 class Settings(BaseSettings):
@@ -21,7 +23,10 @@ class Settings(BaseSettings):
     # CORS
     cors_origins: str = "http://localhost:3000"
 
-    model_config = {"env_file": ".env", "env_file_encoding": "utf-8"}
+    model_config = {
+        "env_file": (Path(__file__).resolve().parents[3] / ".env", ".env"),
+        "env_file_encoding": "utf-8",
+    }
 
     @property
     def cors_origin_list(self) -> list[str]:
