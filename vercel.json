@@ -2,23 +2,23 @@
   "services": {
     "frontend": {
       "root": "frontend",
-      "framework": "nextjs" 
+      "framework": "nextjs"
     },
-    "backend": { 
+    "backend": {
       "root": "backend",
-      "entrypoint": "main.py" 
-    }  
+      "entrypoint": "main.py"
+    }
   },
   "rewrites": [
     {
-      "source": "/api/backend(/(.*))?",
+      "source": "/api/backend/:path*",
       "destination": {
         "type": "service",
         "service": "backend"
       }
     },
     {
-      "source": "/(.*)",
+      "source": "/:path*",
       "destination": {
         "type": "service",
         "service": "frontend"
