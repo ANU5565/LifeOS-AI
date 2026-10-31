@@ -437,6 +437,21 @@ Set these environment variables in Vercel Project Settings:
 
 ---
 
+# ☁️ Render Backend Deployment
+
+The repository includes `render.yaml` for deploying the FastAPI backend as a Render web service. The blueprint uses `backend` as the service root, installs `requirements.txt`, starts Uvicorn on Render's `$PORT`, and checks `/health`.
+
+When creating the service, provide these environment variables in Render:
+
+- `DATABASE_URL`
+- `SECRET_KEY`
+- `GEMINI_API_KEY`
+- `CORS_ORIGINS`
+
+`ACCESS_TOKEN_EXPIRE_MINUTES` defaults to `30` in the blueprint.
+
+---
+
 # 🧪 Development
 
 Before submitting changes, run the available checks.
