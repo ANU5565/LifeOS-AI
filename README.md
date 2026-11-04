@@ -7,7 +7,7 @@ LifeOS-AI is a privacy-first personal context intelligence system designed to he
 The project consists of a **Next.js frontend** and a **FastAPI backend**, with PostgreSQL used for persistent data storage and Google Gemini used as the AI provider.
 
 ---
-
+ 
 ## ✨ Features
 
 * 🤖 AI-powered personal context intelligence
