@@ -427,7 +427,7 @@ Vercel serves the Next.js frontend from `frontend/`. The root `vercel.json` expl
 
 Set `NEXT_PUBLIC_API_URL` in Vercel Project Settings to the deployed Render backend URL, for example `https://lifeos-ai-backend.onrender.com`. Do not use the local default or `/api/backend` unless you add a separate proxy service.
 
-If the Vercel project has a configurable Root Directory, set it to `frontend` and use the standard Next.js build settings. Otherwise, the checked-in root configuration uses `npm --prefix frontend ci`, `npm --prefix frontend run build`, and `frontend/.next`.
+If the Vercel project has a configurable Root Directory, set it to `frontend` and use the standard Next.js build settings. Otherwise, the checked-in root configuration changes into `frontend` for dependency installation and the production build.
 
 ---
 
