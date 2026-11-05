@@ -423,17 +423,11 @@ Google OAuth variables are currently reserved for the Calendar integration work 
 
 ## ☁️ Vercel Deployment Notes
 
-This repository includes `vercel.json` for deploying the Next.js frontend and Python backend together.
+Vercel serves the Next.js frontend from `frontend/`. The root `vercel.json` explicitly installs and builds that project so deployments from the repository root serve the UI instead of routing requests to unsupported Vercel services.
 
-Set these environment variables in Vercel Project Settings:
+Set `NEXT_PUBLIC_API_URL` in Vercel Project Settings to the deployed Render backend URL, for example `https://lifeos-ai-backend.onrender.com`. Do not use the local default or `/api/backend` unless you add a separate proxy service.
 
-- `DATABASE_URL`
-- `SECRET_KEY`
-- `GEMINI_API_KEY`
-- `CORS_ORIGINS`
-- `NEXT_PUBLIC_API_URL=/api/backend`
-
-`NEXT_PUBLIC_API_URL=/api/backend` routes frontend API requests through the Vercel backend rewrite instead of `localhost`.
+If the Vercel project has a configurable Root Directory, set it to `frontend` and use the standard Next.js build settings. Otherwise, the checked-in root configuration uses `npm --prefix frontend ci`, `npm --prefix frontend run build`, and `frontend/.next`.
 
 ---
 
