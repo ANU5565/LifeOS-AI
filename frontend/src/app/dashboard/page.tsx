@@ -1,5 +1,5 @@
-import { FeaturePage } from "@/components/FeaturePage";
+import { DashboardView } from "@/components/DashboardView";
 
 export default function DashboardPage() {
-  return <FeaturePage title="Dashboard" description="Your dashboard is not available yet. Check back soon." />;
+  return <DashboardView />;
 }

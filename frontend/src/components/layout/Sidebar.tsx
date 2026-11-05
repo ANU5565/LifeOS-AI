@@ -65,7 +65,7 @@ export default function Sidebar() {
   const { user, logout } = useAuth();
 
   return (
-    <aside className="fixed left-0 top-0 bottom-0 w-[240px] bg-zinc-950 border-r border-zinc-800/60 flex flex-col z-50">
+    <aside className="fixed left-0 top-0 bottom-0 z-50 hidden w-[240px] flex-col border-r border-zinc-800/60 bg-zinc-950 md:flex">
       {/* Logo */}
       <div className="h-16 flex items-center px-5 border-b border-zinc-800/60">
         <Link href="/dashboard" className="flex items-center gap-2.5 group">
